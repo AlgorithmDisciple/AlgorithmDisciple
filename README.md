@@ -1,5 +1,7 @@
 <h3 align="center">Reverse Engineer | Malware Analyst | Exploit Developer</h3>
 
+-------------------
+
 ```
 section .data
     message1 db 'Hello, My name is Jack Palmer',0
@@ -27,4 +29,15 @@ _start:
     xor ebx, ebx
     int 0x80
 ```
+<div align="center">
 
+
+
+-------------------
+
+### Languages
+![ASSEMBLY](https://img.shields.io/badge/_-ASM-6E4C13.svg?style=for-the-badge) ![C](https://img.shields.io/badge/_-C-555555.svg?style=for-the-badge) ![C++](https://img.shields.io/badge/_-CPP-F34B7D.svg?style=for-the-badge) 
+  
+
+
+ <div>
