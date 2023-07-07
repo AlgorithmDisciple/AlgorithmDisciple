@@ -37,7 +37,8 @@ _start:
 
 ### Languages
 ![ASSEMBLY](https://img.shields.io/badge/_-ASM-6E4C13.svg?style=for-the-badge) ![C](https://img.shields.io/badge/_-C-555555.svg?style=for-the-badge) ![C++](https://img.shields.io/badge/_-CPP-F34B7D.svg?style=for-the-badge) 
-  
 
+### Platforms
+![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42.svg?style=for-the-badge&logo=TryHackMe&logoColor=white) ![HackTheBox](https://img.shields.io/badge/Hack%20The%20Box-9FEF00.svg?style=for-the-badge&logo=Hack-The-Box&logoColor=black) ![LeetCode](https://img.shields.io/badge/LeetCode-FFA116.svg?style=for-the-badge&logo=LeetCode&logoColor=white)
 
  <div>
