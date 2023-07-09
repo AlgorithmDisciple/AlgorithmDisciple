@@ -1,4 +1,4 @@
-<h3 align="center">Low-Level Engineer</h3>
+<h3 align="center">Jack Palmer | Low-Level Engineer</h3>
 
 -------------------
 
