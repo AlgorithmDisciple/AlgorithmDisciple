@@ -1,33 +1,46 @@
-<h3 align="center">Jack Palmer</h3>
+<h3 align="center">Jack Palmer | Low Level Engineer</h3>
 
 -------------------
 
-```
-section .data
-    message1 db 'Hello, My name is Jack Palmer',0
-    len1 equ $-message1
-    message2 db 'Reverse Engineer',0
-    len2 equ $-message2
+``` c
+#include <stdio.h>
+#include <unistd.h>
 
-section .text
-    global _start
+#define ESC "\x1B"
+#define CLEAR_ESC ESC "[2J"
+#define POSITION_ESC ESC "[%d;%dH"
 
-_start:
-    mov eax, 4
-    mov ebx, 1
-    mov ecx, message1
-    mov edx, len1
-    int 0x80
-    
-    mov eax, 4
-    mov ebx, 1
-    mov ecx, message2
-    mov edx, len2
-    int 0x80
+void printFigure(int x, int y, int state) {
+    const char *figure[5];
 
-    mov eax, 1
-    xor ebx, ebx
-    int 0x80
+    if (state == 0) {
+        figure[0] = " O ";
+        figure[1] = "-|-";
+        figure[2] = "/ \\";
+    } else {
+        figure[0] = " O ";
+        figure[1] = "\\|-";
+        figure[2] = " / ";
+    }
+
+    printf(CLEAR_ESC);
+    for (int i = 0; i < 3; i++) {
+        printf(POSITION_ESC "%s\n", y + i, x, figure[i]);
+    }
+}
+
+int main() {
+    int x = 10, y = 10;
+    int state = 0;
+
+    while (1) {
+        printFigure(x, y, state);
+        usleep(500000);
+        state = !state;
+    }
+
+    return 0;
+}
 ```
 <div align="center">
 
