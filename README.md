@@ -1,5 +1,4 @@
 <h3 align="center">Jack Palmer | Red Team Operator |                        Exploit Developer</h3>
-
 -------------------
 
 ``` c
